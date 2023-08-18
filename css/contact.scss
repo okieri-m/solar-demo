@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@mixin absolute-vcal-center {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+// メインビュー
+.mv_wrapper {background-image: url("../images/others/contact-mv.jpg");height: 50vh;}
+.mv_texts{
+    @include absolute-vcal-center;
+    .mv_mv-ttl{color: white;text-align: center;}
+}
+
+// セクション１
+.section_1{background-image: url(../images/home/bg-fconcept.png);
+.section1_desc-contact {
+    margin: 70px auto 60px;
+}
+form{
+    max-width: 700px;
+    margin: auto;
+    .section1_form-container{
+        margin-top: 20px;
+        label {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .inputs, textarea{
+        margin-top: 4px;
+        height: 2.4em;
+        width: 100%;
+        padding: 0 16px;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0 0 0 1px #ccc inset;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: rgb(255 255 255 / 71%);
+    }
+    textarea{
+        height: 200px;
+    }
+    .form-checkbox-name:before {
+        content: "";
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 6px;
+        flex-shrink: 0;
+    }
+}
+}

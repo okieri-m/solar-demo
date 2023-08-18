@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【デモサイト】ソーラーエナジー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/recet.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+        <!-- ヘッダー -->
+        <header class="header flex-c-sb-c">
+            <div class="header_logo">
+                <a class="header_link-top" href="#"><img src="./images/home/dark-blue-logo.png" alt="太陽光ソーラーエナジー" class="header_logo-img"></a>
+            </div>
+            <div class="header_sp-menubtn"><span></span><span></span><span></span></div>
+            <nav class="header_nav">
+                <ul class="header_nav-lists flex-c-sb-c">
+                    <li class="header_nav-item"><a href="#concept">コンセプト</a></li>
+                    <li class="header_nav-item"><a href="#merit">メリット・デメリット</a></li>
+                    <li class="header_nav-item"><a href="#cost">費用</a></li>
+                    <li class="header_nav-item"><a href="#works">実績</a></li>
+                    <li class="header_nav-item"><a href="#faq">FAQ</a></li>
+                    <li class="header_nav-item"><a href="#company">会社概要</a></li>
+                    <li class="header_nav-item header-contact"><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="mv">
+        <div class="mv_wrapper">
+            <div class="mv_texts">
+                <h1 class="mv_mv-ttl fadeUp">ご質問・お問い合わせ</h1>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="section_1">
+            <div class="section1_ wrapper-contact wrapper">
+                <div class="section1_title-contact section-ttl">
+                    <span class="section1_en-ttl-contact en-ttl">Contact</span>
+                    <h2 class="section1_jp-ttl-contact jp-ttl">お問い合わせ</h2>
+                </div>
+                <p class="section1_desc-contact">テキストテキストテキストテキ、テキストテキストテキストテキテキストテキストテキストテキ。テキストテキストテキストテキテキストテキストテキストテキテキストテキストテキストテキ。</p>
+                <form action="">
+                    <div class="section1_form-container">
+                        <label for="namelabel">名前</label>
+                        <input class="inputs" type="text" name="name" id="namelabel" placeholder="例）鈴木　太郎">
+                    </div>
+                    <div class="section1_form-container">
+                        <label for="maillabel">メールアドレス</label>
+                        <input class="inputs" type="email" name="email" id="maillabel" placeholder="○○○.jp">
+                    </div>
+                    <div class="section1_form-container">
+                        <label for="phonenumlabel">電話番号(ハイフンなし) 
+                        </label>
+                        <input class="inputs" type="tell" name="tell" id="phonenumlabel" placeholder="0987654321">
+                    </div>
+                    <div class="section1_form-container">
+                        <label for="ikenlabel">ご意見</label>
+                        <textarea id="question"></textarea>
+                    </div>
+                    <div class="section1_form-container">
+                            <div class="form-checkbox">
+                                <label>
+                                    <input type="checkbox" name="checkbox" value="checkform-item">
+                                    <span class="form-checkbox-name">
+                                        <span class="form-checkbox-text">個人情報の取扱いについてに同意する</span>
+                                    </span>
+                                </label>
+                            </div>
+                    </div>
+                    <div class="section1_form-container btn">
+                        <input type="submit" value="送信する">
+                    </div>  
+                </form>
+            </div>
+        </section>
+    </main>

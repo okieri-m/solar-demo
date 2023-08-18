@@ -1,0 +1,61 @@
+.mv_wrapper {
+  background-image: url("../images/others/contact-mv.jpg");
+  height: 50vh;
+}
+
+.mv_texts {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.mv_texts .mv_mv-ttl {
+  color: white;
+  text-align: center;
+}
+
+.section_1 {
+  background-image: url(../images/home/bg-fconcept.png);
+}
+.section_1 .section1_desc-contact {
+  margin: 70px auto 60px;
+}
+.section_1 form {
+  max-width: 700px;
+  margin: auto;
+}
+.section_1 form .section1_form-container {
+  margin-top: 20px;
+}
+.section_1 form .section1_form-container label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.section_1 form .inputs, .section_1 form textarea {
+  margin-top: 4px;
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.71);
+}
+.section_1 form textarea {
+  height: 200px;
+}
+.section_1 form .form-checkbox-name:before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=contact.css.map */
