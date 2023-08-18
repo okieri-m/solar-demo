@@ -42,19 +42,33 @@ for (let i = 0; i < smoothScrollTrigger.length; i++ ){
   });
 }
 
-// スクロールしたら要素をフェードイン
+// フェードインさせたい要素を取得して、変数に格納します
 let fadeInTarget = document.querySelectorAll(".fade-in");
-window.addEventListener('scroll', ()=>{
-  for(let i = 0; i<fadeInTarget.length; i++){
+
+// ウィンドウがスクロールされるたびに実行する関数を登録します
+window.addEventListener('scroll', () => {
+  // フェードイン対象の各要素について処理を行います
+  for (let i = 0; i < fadeInTarget.length; i++) {
+    // 要素の位置や大きさに関する情報を取得します
     const rect = fadeInTarget[i].getBoundingClientRect().top;
+
+    // 現在のスクロール位置を取得します
     const scroll = scrollY || document.documentElement.scrollTop;
-    const offset = rect + scroll
+
+    // 要素の上端と現在のスクロール位置を合計して、要素の画面上での位置を計算します
+    const offset = rect + scroll;
+
+    // ウィンドウの高さを取得します
     const windowheight = window.innerHeight;
-    if (scroll > offset - windowheight + 150){
+
+    // 要素が特定のスクロール位置に達したかどうかをチェックします
+    if (scroll > offset - windowheight + 150) {
+      // 要素にフェードインのためのクラスを追加して、実際に表示を切り替えます
       fadeInTarget[i].classList.add("scroll-in");
     }
   }
 });
+
 
 // ずらしてフェードイン
 const timelag = document.querySelectorAll(".p-timelag");
