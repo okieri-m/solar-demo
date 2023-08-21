@@ -28,7 +28,14 @@ form{
             font-size: 18px;
             margin-bottom: 20px;
         }
+        .policy-label{
+            font: {
+                weight: 500;
+                size: 14px;
+            }
+        }
     }
+    .inputs::placeholder, textarea::placeholder{opacity: 0.3;}
     .inputs, textarea{
         margin-top: 4px;
         height: 2.4em;
@@ -44,15 +51,23 @@ form{
     textarea{
         height: 200px;
     }
-    .form-checkbox-name:before {
-        content: "";
-        display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        margin-right: 6px;
-        flex-shrink: 0;
+    #agree{
+        all: revert;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
     }
+        .section1_form-container .btn{
+            background-color: var(--dark-green);
+            padding: 24px 0;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            &[disable]{
+                    background-color: #ccc;
+                    cursor: not-allowed;
+            }
+        }
+    
 }
 }

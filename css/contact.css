@@ -33,6 +33,16 @@
   font-size: 18px;
   margin-bottom: 20px;
 }
+.section_1 form .section1_form-container .policy-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+.section_1 form .inputs::-moz-placeholder, .section_1 form textarea::-moz-placeholder {
+  opacity: 0.3;
+}
+.section_1 form .inputs::placeholder, .section_1 form textarea::placeholder {
+  opacity: 0.3;
+}
 .section_1 form .inputs, .section_1 form textarea {
   margin-top: 4px;
   height: 2.4em;
@@ -49,13 +59,20 @@
 .section_1 form textarea {
   height: 200px;
 }
-.section_1 form .form-checkbox-name:before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-right: 6px;
-  flex-shrink: 0;
+.section_1 form #agree {
+  all: revert;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.section_1 form .section1_form-container .btn {
+  background-color: var(--dark-green);
+  padding: 24px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section_1 form .section1_form-container .btn[disable] {
+  background-color: #ccc;
+  cursor: not-allowed;
 }/*# sourceMappingURL=contact.css.map */
