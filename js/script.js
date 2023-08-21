@@ -6,7 +6,6 @@
 		open.classList.toggle("open");
 		nav.classList.toggle("open");
 	});
-
 	// 高さを揃える要素
 	const target = document.querySelectorAll(".section5_lc");
 	const heightlist = [];
@@ -76,4 +75,15 @@
 			}
 		});
 	}
+
+	const checkbox = document.getElementById("agree");
+	const submit = document.getElementById("submit");
+
+	checkbox.addEventListener("click", ()=>{
+		if (checkbox.checked === true){
+			submit.disable = false;
+		}else{
+			submit.disable = true;
+		}
+	});
 }

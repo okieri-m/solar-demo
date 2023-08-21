@@ -57,17 +57,16 @@ form{
         height: 15px;
         vertical-align: middle;
     }
-        .section1_form-container .btn{
-            background-color: var(--dark-green);
+    #submit{
+        background-color: pink;
             padding: 24px 0;
             width: 80%;
             margin: 0 auto;
             text-align: center;
-            &[disable]{
-                    background-color: #ccc;
-                    cursor: not-allowed;
-            }
-        }
-    
+        &[disable]{
+            background-color: #ccc;
+            cursor: not-allowed;
+    }
+    }
 }
 }
