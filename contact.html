@@ -33,7 +33,7 @@
     <div class="mv">
         <div class="mv_wrapper">
             <div class="mv_texts">
-                <h1 class="mv_mv-ttl fadeUp">ご質問・お問い合わせ</h1>
+                <h1 class="mv_mv-ttl fadeUp">ご質問・<br class="ttl-onlysp">お問い合わせ</h1>
             </div>
         </div>
     </div>
@@ -63,14 +63,75 @@
                         <label for="ikenlabel">ご意見</label>
                         <textarea id="question"></textarea>
                     </div>
-                    <div class="section1_form-container">
-                        <input type="checkbox" id="agree" />
-                        <label for="agree" class="policy-label">個人情報の取り扱いに同意する</label>
+                    <div class="section1_form-container agree-container">
+                        <input type="checkbox" id="agree">
+                        <label for="agree" class="policy-label"><a href="#" class="policy-label-link">個人情報の取り扱いに同意する</a></label>
                       </div>
-                    <div class="section1_form-container btn" id="submit">
-                        <input type="submit" value="送信する">
-                    </div>  
+                    <button type="submit" class="submit" id="submit" disabled>送信する</button>
                 </form>
             </div>
         </section>
+        <section class="company_info">
+            <div class="company_info_wrapper wrapper">
+                <div class="company_info_title section-ttl">
+                    <span id="company" class="company_info_en-ttl en-ttl">Conpany Infomation</span>
+                    <h2 class="company_info_jp-ttl jp-ttl">会社情報</h2>
+                </div>
+                <p class="company_info_desc">テキストテキストテキストテキ、テキストテキストテキストテキテキストテキストテキストテキ。テキストテキストテキストテキテキストテキストテキストテキテキストテキストテキストテキ。</p>
+                <div class="company_info_table-container fade-in">
+                    <table class="company_info_table">
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">会社名</th>
+                        <td class="company_info_table-txt">有限会社 ソーラーエナジー</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">所在地</th>
+                        <td class="company_info_table-txt">〒901-1111 沖縄県那覇市サンプル1-11-1</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">事業内容</th>
+                        <td class="company_info_table-txt">太陽光パネル・蓄電池の設置<br>電機工事</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">時間</th>
+                        <td class="company_info_table-txt">月曜日〜金曜日（9:00〜17:00）</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">定休日</th>
+                        <td class="company_info_table-txt">土曜日・日曜日・祝日</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">電話番号</th>
+                        <td class="company_info_table-txt">098-765-4321</td>
+                        </tr>
+                        <tr class="company_info_cellcontainer">
+                        <th class="company_info_table-ttl">公式サイト</th>
+                        <td class="company_info_table-txt"><a href="#">https://demosite.com</a></td>
+                        </tr>
+                        </table>
+                        
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer_logo">
+                <img src="./images/home/light-blue-logo.png" alt="ソーラーエナジーロゴ" class="footer_logo-img">
+            </div>
+            <div class="footer_menu">
+                <ul class="footer_nav-lists">
+                    <li class="footer_nav-item"><a href="#merit">メリット・デメリット</a></li>
+                    <li class="footer_nav-item"><a href="#cost">費用</a></li>
+                    <li class="footer_nav-item"><a href="#works">実績</a></li>
+                    <li class="footer_nav-item"><a href="#faq">FAQ</a></li>
+                    <li class="footer_nav-item footer_nav-item-last"><a href="#">太陽光豆知識</a></li>
+                </ul>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright-p"><small>&copy;Demosite</small></p>
+            </div>
+        </div>
+    </footer>
+<script src="./js/script.js"></script>
+</body>

@@ -1,4 +1,6 @@
 @charset "utf-8";
+$dark-green: #318C7D;
+$light-green: #4D9A8D;
 
 @mixin absolute-vcal-center {
     top: 60%;
@@ -6,11 +8,38 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);}
+
+$pc: 1024px; 
+$tab: 945px; 
+$sp: 768px;
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+    }
+    @mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+    }
+    @mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+    }
+    
 // メインビュー
 .mv_wrapper {background-image: url("../images/others/contact-mv.jpg");height: 50vh;}
 .mv_texts{
     @include absolute-vcal-center;
     .mv_mv-ttl{color: white;text-align: center;}
+    .ttl-onlysp{
+        display: none;
+        @include sp {
+            display: block;
+      };
+    }
+    
 }
 
 // セクション１
@@ -33,6 +62,10 @@ form{
                 weight: 500;
                 size: 14px;
             }
+            .policy-label-link{
+                color: blue;
+                text-decoration: underline;
+            }
         }
     }
     .inputs::placeholder, textarea::placeholder{opacity: 0.3;}
@@ -51,22 +84,27 @@ form{
     textarea{
         height: 200px;
     }
-    #agree{
-        all: revert;
-        width: 15px;
-        height: 15px;
-        vertical-align: middle;
+    .agree-container{
+        text-align: center;
+        #agree{
+            all: revert;
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
     }
-    #submit{
-        background-color: pink;
-            padding: 24px 0;
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        &[disable]{
+    .submit{
+        background-color: $dark-green;padding: 20px 0;width: 60%;text-align: center;margin: 10px auto 50px;display: flex;justify-content: center;
+        &:hover{
+            background-color: $light-green;
+        }
+        &[disabled]{
             background-color: #ccc;
             cursor: not-allowed;
-    }
+        }
+        @include sp {
+            padding: 15px 0;width: 100%;
+          };
     }
 }
 }

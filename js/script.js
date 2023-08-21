@@ -75,15 +75,17 @@
 			}
 		});
 	}
-
-	const checkbox = document.getElementById("agree");
-	const submit = document.getElementById("submit");
-
-	checkbox.addEventListener("click", ()=>{
-		if (checkbox.checked === true){
-			submit.disable = false;
-		}else{
-			submit.disable = true;
+	const agreeCheckbox = document.getElementById("agree");
+	const submitBtn = document.getElementById("submit");
+	function change() {
+		let element;
+		if (agreeCheckbox.checked) {
+			element = submitBtn;
+			element.disabled = false;
+		} else {
+			element = submitBtn;
+			element.disabled = true;
 		}
-	});
+	}
+	agreeCheckbox.onchange = change;
 }
