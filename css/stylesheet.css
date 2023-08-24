@@ -96,6 +96,10 @@ h3{font-size: 24px;font-weight: 500;}
 .mv_texts{left: 50%;transform: translateX(-50%);transform: translateX(-50%);}
 .mv_benefit-item{padding: 5px 20px;}
 }
+@media screen and (max-width: 400px) {
+  .mv_wrapper{height: 100vh;}
+  .mv_benefit-item{padding: 5px 10px;}
+}
 .show-trigger {opacity: 0;transition: all .5s ease;}
 .show-trigger.show {opacity: 1;transform: none;}
 /* セクション１ */
@@ -200,8 +204,8 @@ h3{font-size: 24px;font-weight: 500;}
 .section5_lc{background-color: white;box-shadow: 2px 2px 4px rgb(128 128 128 / 30%);}
 .section5_items{display: grid;grid-template-columns: auto auto auto;gap: 3%;opacity: 0;transition-property: opacity, transform;transform:translateY(-50%);}
 .section5_item-texts {padding: 15px 10px 10px;}
+.section5_desc{margin: 70px auto 60px;}
 .section5_lable{padding: 20px 0;text-align: center;margin-bottom: 20px;position: relative;color: white;}
-.section5_lable::after{content: '';position: absolute;top: 0; right: -10px;;width: 50px;height: 64px;border-width: 500px 300px 0 0;}
 .lable01, .label-sp-01 {background-color: #54C3F1;}
 .lable02, .label-sp-02 {background-color: #0097E0}
 .lable03, .label-sp-03 {background-color: #0081CC;}

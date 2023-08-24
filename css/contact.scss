@@ -1,33 +1,6 @@
 @charset "utf-8";
-$dark-green: #318C7D;
-$light-green: #4D9A8D;
+@import "variables";
 
-@mixin absolute-vcal-center {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);}
-
-$pc: 1024px; 
-$tab: 945px; 
-$sp: 768px;
-@mixin pc {
-    @media (max-width: ($pc)) {
-        @content;
-    }
-    }
-    @mixin tab {
-    @media (max-width: ($tab)) {
-        @content;
-    }
-    }
-    @mixin sp {
-    @media (max-width: ($sp)) {
-        @content;
-    }
-    }
-    
 // メインビュー
 .mv_wrapper {background-image: url("../images/others/contact-mv.jpg");height: 50vh;}
 .mv_texts{
