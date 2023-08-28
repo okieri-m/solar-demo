@@ -76,7 +76,7 @@
                 // background-color: rgba(11, 52, 145, 0.85);
               };
             .section2_texts{
-                background-color: whitesmoke;padding: 80px 0 80px 60px;width: 40%;position: relative;display: flex;flex-direction: column;justify-content: center;align-items: end;
+                background-color: whitesmoke;padding: 80px 0 80px 60px;width: 40%;position: relative;display: flex;flex-direction: column;justify-content: center;align-items: end;height: 500px;
                 &::after{border-color: transparent transparent transparent whitesmoke;content: '';position: absolute;right: -300px;top: 0;z-index: 12;width: 0;height: 0;border-style: solid;border-width: 0 0 510px 300px;
                     @include sp {
                         content: none;
@@ -147,7 +147,7 @@
 .section_3 {
     background-image: url("../images/others/bg-company-flow.jpg");background-repeat: no-repeat;background-size: cover;
     .section3_wrapper {
-        padding: 50px 60px 100px;max-width: 1100px;
+        padding: 50px 0 100px;max-width: 1100px;
         @include sp {
             padding: 50px 20px 150px;
             background-color: unset;
@@ -260,8 +260,15 @@
 }
 
 .section_4, .section_5{background-image: none;}
+.section4_wrapper{
+    padding: 50px 0;
+}
 .cost_work-bgwrapper{
-    background-image: url("../images/home/bg-works.png");
+    background: {
+    image: url("../images/home/bg-works.png");
+    repeat: no-repeat;
+    size: cover;
+    } 
 }
 .cost_table{
     text-align: center;
@@ -295,7 +302,10 @@
     }
 }
 .section5_wrapper{
-    padding: 100px 60px;
+    padding: 100px 0 50px;
+    @include sp {
+        padding: 50px 20px;
+      };
 }
 .section5_works-filter-container{
     @include flex-column;
@@ -317,7 +327,13 @@
     .works-item{
         background-color: white;
         padding: 20px;
+        @include sp {
+            margin-bottom: 20px
+          };
     }
+    @include sp {
+        display: block
+      };
 }
 .works-date{
     padding-top: 20px;
@@ -325,4 +341,37 @@
 .section5_item-ttl{
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.section6_wrapper{
+       padding: 50px 0;
+}
+.section6_desc{
+    margin: 60px 0;
+}
+.section5_staff-lists{
+    @include flex-column;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    li > img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        margin-top: 20px;
+        @include sp {
+            width: 100%;
+          };
+    }
+    li > p {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        @include sp {
+            margin-top: 5px
+          };
+    }
 }
