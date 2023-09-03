@@ -465,6 +465,14 @@
 .section4_wrapper {
   padding: 50px 0;
 }
+.section4_wrapper .section4_desc {
+  padding: 0 60px;
+}
+@media (max-width: 768px) {
+  .section4_wrapper .section4_desc {
+    padding: 0 20px;
+  }
+}
 
 .cost_work-bgwrapper {
   background-image: url("../images/home/bg-works.png");
@@ -563,7 +571,12 @@
 }
 
 .section6_wrapper {
-  padding: 50px 0;
+  padding: 50px 60px;
+}
+@media (max-width: 768px) {
+  .section6_wrapper {
+    padding: 50px 20px;
+  }
 }
 
 .section6_desc {

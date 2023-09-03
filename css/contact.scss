@@ -67,7 +67,7 @@ form{
         }
     }
     .submit{
-        background-color: $dark-green;padding: 20px 0;width: 60%;text-align: center;margin: 10px auto 50px;display: flex;justify-content: center;
+        background-color: $dark-green;padding: 20px 0;width: 60%;text-align: center;margin: 10px auto 50px;display: flex;justify-content: center;cursor: pointer;
         &:hover{
             background-color: $light-green;
         }

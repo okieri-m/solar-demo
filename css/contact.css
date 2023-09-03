@@ -88,6 +88,7 @@
   margin: 10px auto 50px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .section_1 form .submit:hover {
   background-color: #4D9A8D;

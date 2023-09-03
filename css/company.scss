@@ -147,7 +147,7 @@
 .section_3 {
     background-image: url("../images/others/bg-company-flow.jpg");background-repeat: no-repeat;background-size: cover;
     .section3_wrapper {
-        padding: 50px 0 100px;max-width: 1100px;
+        padding: 50px 60px 100px;max-width: 1100px;
         @include sp {
             padding: 50px 20px 150px;
             background-color: unset;
@@ -262,6 +262,11 @@
 .section_4, .section_5{background-image: none;}
 .section4_wrapper{
     padding: 50px 0;
+    .section4_desc{padding: 0 60px;
+        @include sp {
+            padding: 0 20px;
+          };}
+    
 }
 .cost_work-bgwrapper{
     background: {
@@ -344,7 +349,10 @@
 }
 
 .section6_wrapper{
-       padding: 50px 0;
+       padding: 50px 60px;
+       @include sp {
+        padding: 50px 20px;
+      };
 }
 .section6_desc{
     margin: 60px 0;
