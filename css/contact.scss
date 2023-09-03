@@ -2,82 +2,124 @@
 @import "variables";
 
 // メインビュー
-.mv_wrapper {background-image: url("../images/others/contact-mv.jpg");height: 50vh;}
-.mv_texts{
+.mv_wrapper {
+    background-image: url("../images/others/contact-mv.jpg");
+    height: 50vh;
+}
+
+.mv_texts {
     @include absolute-vcal-center;
-    .mv_mv-ttl{color: white;text-align: center;}
-    .ttl-onlysp{
+
+    .mv_mv-ttl {
+        color: white;
+        text-align: center;
+    }
+
+    .ttl-onlysp {
         display: none;
+
         @include sp {
             display: block;
-      };
+        }
+
+        ;
     }
-    
+
 }
 
 // セクション１
-.section_1{background-image: url(../images/home/bg-fconcept.png);
-.section1_desc-contact {
-    margin: 70px auto 60px;
-}
-form{
-    max-width: 700px;
-    margin: auto;
-    .section1_form-container{
-        margin-top: 20px;
-        label {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .policy-label{
-            font: {
-                weight: 500;
-                size: 14px;
+.section_1 {
+    background-image: url(../images/home/bg-fconcept.png);
+
+    .section1_desc-contact {
+        margin: 70px auto 60px;
+    }
+
+    form {
+        max-width: 700px;
+        margin: auto;
+
+        .section1_form-container {
+            margin-top: 20px;
+
+            label {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 20px;
             }
-            .policy-label-link{
-                color: blue;
-                text-decoration: underline;
+
+            .policy-label {
+                font: {
+                    weight: 500;
+                    size: 14px;
+                }
+
+                .policy-label-link {
+                    color: blue;
+                    text-decoration: underline;
+                }
             }
         }
-    }
-    .inputs::placeholder, textarea::placeholder{opacity: 0.3;}
-    .inputs, textarea{
-        margin-top: 4px;
-        height: 2.4em;
-        width: 100%;
-        padding: 0 16px;
-        border-radius: 4px;
-        border: none;
-        box-shadow: 0 0 0 1px #ccc inset;
-        appearance: none;
-        -webkit-appearance: none;
-        background-color: rgb(255 255 255 / 71%);
-    }
-    textarea{
-        height: 200px;
-    }
-    .agree-container{
-        text-align: center;
-        #agree{
-            all: revert;
-            width: 15px;
-            height: 15px;
-            vertical-align: middle;
+
+        .inputs::placeholder,
+        textarea::placeholder {
+            opacity: 0.3;
+        }
+
+        .inputs,
+        textarea {
+            margin-top: 4px;
+            height: 2.4em;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 0 0 0 1px #ccc inset;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: rgb(255 255 255 / 71%);
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        .agree-container {
+            text-align: center;
+
+            #agree {
+                all: revert;
+                width: 15px;
+                height: 15px;
+                vertical-align: middle;
+            }
+        }
+
+        .submit {
+            background-color: $dark-green;
+            padding: 20px 0;
+            width: 60%;
+            text-align: center;
+            margin: 10px auto 50px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $light-green;
+            }
+
+            &[disabled] {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+
+            @include sp {
+                padding: 15px 0;
+                width: 100%;
+            }
+
+            ;
         }
     }
-    .submit{
-        background-color: $dark-green;padding: 20px 0;width: 60%;text-align: center;margin: 10px auto 50px;display: flex;justify-content: center;cursor: pointer;
-        &:hover{
-            background-color: $light-green;
-        }
-        &[disabled]{
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-        @include sp {
-            padding: 15px 0;width: 100%;
-          };
-    }
-}
 }
