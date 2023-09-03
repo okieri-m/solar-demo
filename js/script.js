@@ -75,17 +75,4 @@
 			}
 		});
 	}
-	const agreeCheckbox = document.getElementById("agree");
-	const submitBtn = document.getElementById("submit");
-	function change() {
-		let element;
-		if (agreeCheckbox.checked) {
-			element = submitBtn;
-			element.disabled = false;
-		} else {
-			element = submitBtn;
-			element.disabled = true;
-		}
-	}
-	agreeCheckbox.onchange = change;
 }
