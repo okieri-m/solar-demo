@@ -81,8 +81,7 @@
 @media (max-width: 768px) {
   .section2 .section2_wrapper .section2_container {
     height: 100%;
-    -webkit-clip-path: polygon(0% 90%, 0 0, 100% 10%, 100% 100%);
-            clip-path: polygon(0% 90%, 0 0, 100% 10%, 100% 100%);
+    clip-path: polygon(0% 90%, 0 0, 100% 10%, 100% 100%);
   }
 }
 .section2 .section2_wrapper .section2_container .section2_texts {
@@ -111,8 +110,7 @@
 @media (max-width: 768px) {
   .section2 .section2_wrapper .section2_container .section2_texts::after {
     content: none;
-    -webkit-clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%);
-            clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%);
+    clip-path: polygon(0% 90%, 0% 0%, 100% 0%, 100% 100%);
   }
 }
 @media (max-width: 768px) {
@@ -124,7 +122,8 @@
 .section2 .section2_wrapper .section2_container .section2_texts .section2_texts-container {
   max-width: 500px;
 }
-.section2 .section2_wrapper .section2_container .section2_texts .section2_texts-container .section2_h3-ttl, .section2 .section2_wrapper .section2_container .section2_texts .section2_texts-container .section2_txt {
+.section2 .section2_wrapper .section2_container .section2_texts .section2_texts-container .section2_h3-ttl,
+.section2 .section2_wrapper .section2_container .section2_texts .section2_texts-container .section2_txt {
   margin-bottom: 30px;
 }
 @media (max-width: 768px) {
@@ -181,8 +180,7 @@
   top: 0;
   z-index: 12;
   background-color: whitesmoke;
-  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
-          clip-path: polygon(100% 100%, 100% 0, 0 0);
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
 }
 @media (max-width: 768px) {
   .section2 .section2_wrapper .clear-float .strength-right::after {
@@ -207,7 +205,7 @@
   background-size: cover;
 }
 .section_3 .section3_wrapper {
-  padding: 50px 0 100px;
+  padding: 50px 60px 100px;
   max-width: 1100px;
 }
 @media (max-width: 768px) {
@@ -285,27 +283,33 @@
   }
 }
 
-.lable01, .label-sp-01 {
+.lable01,
+.label-sp-01 {
   background-color: #54C3F1;
 }
 
-.lable02, .label-sp-02 {
+.lable02,
+.label-sp-02 {
   background-color: #0097E0;
 }
 
-.lable03, .label-sp-03 {
+.lable03,
+.label-sp-03 {
   background-color: #0081CC;
 }
 
-.lable04, .label-sp-04 {
+.lable04,
+.label-sp-04 {
   background-color: #0068B7;
 }
 
-.lable05, .label-sp-05 {
+.lable05,
+.label-sp-05 {
   background-color: #004EA2;
 }
 
-.lable06, .label-sp-06 {
+.lable06,
+.label-sp-06 {
   background-color: #0B318F;
 }
 
@@ -424,8 +428,7 @@
     top: 100%;
     right: 0;
     z-index: 99;
-    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
-            clip-path: polygon(0 0, 100% 0, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
     width: 100%;
     height: 30px;
   }
@@ -458,7 +461,8 @@
     opacity: 1;
   }
 }
-.section_4, .section_5 {
+.section_4,
+.section_5 {
   background-image: none;
 }
 
@@ -594,10 +598,8 @@
 .section5_staff-lists li > img {
   width: 230px;
   height: 230px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
