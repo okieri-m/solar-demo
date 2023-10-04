@@ -1,0 +1,123 @@
+.mv_wrapper {
+  background-image: url("../images/others/mv-work-example.jpg");
+  height: 50vh;
+}
+.mv_wrapper::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  height: inherit;
+  display: block;
+}
+
+.mv_texts {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.mv_texts .mv_mv-ttl {
+  color: white;
+  text-align: center;
+}
+.mv_texts .mv_mv-ttl br {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mv_texts .mv_mv-ttl br {
+    display: block;
+  }
+}
+.mv_texts .ttl-onlysp {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mv_texts .ttl-onlysp {
+    display: block;
+  }
+}
+
+.section1_title {
+  padding: 0;
+}
+
+.section1_contents-wrapper {
+  margin-top: 80px;
+}
+.section1_contents-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.section1_contents-wrapper li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.section1_contents-wrapper li .section1_content-img {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .section1_contents-wrapper li .section1_content-img {
+    width: 100%;
+  }
+}
+.section1_contents-wrapper li .section1_contents-text {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .section1_contents-wrapper li .section1_contents-text {
+    width: 100%;
+  }
+}
+.section1_contents-wrapper li .section1_contents-text .section1_contents-stitle {
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .section1_contents-wrapper li {
+    display: block;
+  }
+}
+
+.test {
+  flex-direction: row-reverse;
+}
+
+.section1_cost-table h2 {
+  font-size: 24px;
+}
+
+.cost_table {
+  text-align: center;
+  margin: 30px auto 100px;
+  border: 1px solid #E8E8E8;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .cost_table {
+    width: 100%;
+  }
+}
+.cost_table tr {
+  border: 1px solid #E8E8E8;
+}
+.cost_table tr .cost_table-ttl {
+  padding: 20px 0;
+  width: 50%;
+  background-color: #B8D4F6;
+}
+@media (max-width: 768px) {
+  .cost_table tr .cost_table-ttl {
+    padding: 10px 20px;
+    min-width: unset;
+  }
+}
+.cost_table tr .cost_table-txt {
+  padding: 20px 0;
+  border: 1px solid #E8E8E8;
+  background-color: white;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .cost_table tr .cost_table-txt {
+    padding: 10px 20px;
+  }
+}/*# sourceMappingURL=works.css.map */

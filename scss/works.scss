@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import "variables";
+
+// メインビュー
+.mv_wrapper {
+    background-image: url("../images/others/mv-work-example.jpg");
+    height: 50vh;
+    &::after{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.3);
+        height: inherit;
+        display: block;
+    }
+}
+.mv_texts {
+    @include absolute-vcal-center;
+
+    .mv_mv-ttl {
+        color: white;
+        text-align: center;
+        br{
+            display: none;
+            @include sp {
+            display: block;
+        }
+        }
+    }
+
+    .ttl-onlysp {
+        display: none;
+
+        @include sp {
+            display: block;
+        }
+    }
+}
+.section1_title{
+        padding: 0;
+}
+.section1_contents-wrapper{
+    margin-top: 80px;
+    li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+        .section1_content-img{
+            width: 40%;
+            @include sp {
+                width: 100%;
+            }
+        }
+        .section1_contents-text{
+            width: 50%;
+            @include sp {
+                width: 100%;
+            }
+            .section1_contents-stitle{
+                margin-bottom: 30px;
+            }
+        }
+        @include sp {
+        display: block;
+    }
+    }
+} 
+.test{
+    flex-direction: row-reverse;
+}
+.section1_cost-table h2{
+    font-size: 24px;
+}
+// テーブル
+.cost_table {
+    text-align: center;
+    margin: 30px auto 100px;
+    border: 1px solid #E8E8E8;
+    width: 70%;
+    @include sp{
+        width: 100%;
+    }
+    tr {
+        border: 1px solid #E8E8E8;
+        .cost_table-ttl {
+            padding: 20px 0;
+            width: 50%;
+            background-color: #B8D4F6;
+            @include sp {
+                padding: 10px 20px;
+                min-width: unset;
+            }
+        }
+        .cost_table-txt {
+            padding: 20px 0;
+            border: 1px solid #E8E8E8;
+            background-color: white;
+            width: 50%;
+            @include sp {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
